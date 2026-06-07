@@ -1,0 +1,183 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:Arial,sans-serif;
+}
+
+nav{
+    background:#0f172a;
+    color:white;
+
+    display:flex;
+    justify-content:space-between;
+    align-items:center;
+
+    padding:20px 10%;
+}
+#hero{
+    height:90vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    text-align:center;
+
+    background:linear-gradient(
+        rgba(15,23,42,0.8),
+        rgba(15,23,42,0.8)
+    ),
+    url("https://images.unsplash.com/photo-1578575437130-527eed3abbec?auto=format&fit=crop&w=1600&q=80");
+
+    background-size:cover;
+    background-position:center;
+
+    color:white;
+}
+
+.hero-content{
+    max-width:700px;
+}
+
+.hero-content h1{
+    font-size:3rem;
+    margin-bottom:20px;
+}
+
+.hero-content p{
+    font-size:1.2rem;
+    margin-bottom:30px;
+}
+
+.hero-content button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    border-radius:6px;
+    padding:14px 30px;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 24px;
+    cursor:pointer;
+}
+
+section{
+    padding:80px 10%;
+}
+
+h2{
+    margin-bottom:20px;
+}
+
+.service-card,
+.review{
+    padding:20px;
+    margin:15px 0;
+    border:1px solid #ddd;
+}
+
+form{
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:12px;
+}
+
+footer{
+    background:#0f172a;
+    color:white;
+    text-align:center;
+    padding:20px;
+}
+
+nav a{
+    color:white;
+    text-decoration:none;
+    margin-left:20px;
+}
+
+.services-container{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:20px;
+}
+
+.service-card{
+    padding:30px;
+    border-radius:12px;
+    box-shadow:0 5px 15px rgba(0,0,0,0.1);
+    transition:0.3s;
+}
+
+.service-card:hover{
+    transform:translateY(-8px);
+}
+
+.review{
+    padding:25px;
+    margin:20px 0;
+
+    border-left:5px solid #2563eb;
+
+    box-shadow:0 5px 15px rgba(0,0,0,0.08);
+}
+
+#contact{
+    background:#f8fafc;
+}
+
+form{
+    max-width:600px;
+    margin:auto;
+
+    display:flex;
+    flex-direction:column;
+    gap:15px;
+}
+
+input,
+textarea{
+    padding:15px;
+    border:1px solid #ddd;
+    border-radius:8px;
+}
+
+textarea{
+    min-height:150px;
+}
+
+form button{
+    background:#2563eb;
+    color:white;
+    border:none;
+    padding:15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+@media(max-width:768px){
+
+    .hero-content h1{
+        font-size:2rem;
+    }
+
+    nav{
+        flex-direction:column;
+        gap:15px;
+    }
+
+    .services-container{
+        grid-template-columns:1fr;
+    }
+
+}
