@@ -28,4 +28,14 @@ Prompt 9:
 Suggest improvements for UI, spacing, responsiveness, and visual hierarchy.
 
 Prompt 10:
+Create a footer with social media links and company information.
+
+Prompt 11:
+Implement Google Sheets Automation using Google Apps Script to store form submissions.
+
+Prompt 12:
 Provide deployment guidance using GitHub and Netlify.
+
+Prompt 13:
+Improve the overall UI and make the website more professional and responsive.
+
